@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="contador, Sergio R. Orrego, Esquel-Chubut, oficina contable">
+    <title>Contador Público</title>
+
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preload" href="img/logo.png" as="image">
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="barra">
+                <a href="index.html">
+                    <img loading="lazy" src="img/logo.png" alt="foto portada" class="logo">
+                </a>
+                <nav class="navegacion">
+                    <a href="index.html" class="navegacion_enlace">Inicio</a>
+                    <a href="sobre_la_empresa.html" class="navegacion_enlace">Sobre la Empresa</a>
+                    <a href="servicios.html" class="navegacion_enlace">Servicios</a>
+                    <a href="contacto.html" class="navegacion_enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+        <div class="bg-img__contacto"></div>
+    </header>
+
+    <main class=" contenedor">
+        <h2 class="centrar-texto contacto-titulo">Contacto</h2>
+
+        <form class="formulario sombra" name="contacto" netlify action="/enviado.html">
+                <div class="campo">
+                    <input class="campo__field" type="text" placeholder="Nombre y Apellido" name="nombre" required>  
+                </div> 
+                <div class="campo">
+                    <input class="campo__field" type="tel" placeholder="Telefono" name="telefono" pattern="[0-9]{10}" min="8" max="10" required>  
+                </div> 
+                <div class="campo">
+                    <input class="campo__field" type="email" placeholder="ej: ejemplo@ejemplo.com" name="email" required>  
+                </div> 
+                <div class="campo">
+                    <textarea class="campo__field campo__field--textarea" placeholder="Escriba su consulta" name="consulta"></textarea>
+                </div> 
+                <div class="campo">
+                    <input class="boton" type="submit" value="Enviar">
+                </div>     
+        </form>
+
+        <section class="info-contacto">
+            <div class="info-contacto__parrafo">
+                <p>Chacabuco 1091</p>
+                <p>Esquel-Chubut</p>
+                <p>Cel: (291) - 4749490</p>
+                <!--<p>Mail: <a href="mailto:caporrego@yahoo.com.ar?Subject=Interesado%20en%20el%20curso" style="color: blue;">caporrego@yahoo.com.ar</a></p>-->
+            </div>
+        </section>
+
+        <hr size="1px" color="lightgrey" style="margin-bottom: 5rem;">
+
+        <section class="ubicacion contenedor">
+            <div class="centrar-texto">
+                <iframe
+                    title="ubicacion"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2921.9473599806092!2d-71.31837208395359!3d-42.916151150514196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961dac2354da9fe5%3A0x4e3976d4246bf1f9!2sChacabuco%201091%2C%20Esquel%2C%20Chubut!5e0!3m2!1ses!2sar!4v1622042263096!5m2!1ses!2sar"
+                    width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+            <div class="ubicacion-llegar">
+                <div class="ubicacion-pinmapa">
+                    <img class="ubicacion-pinmapa__tamaño" src="https://img.icons8.com/color/48/000000/marker--v1.png" />
+                </div>
+                <div class="ubicacion-boton">
+                    <button class="boton">
+                        <a href="https://www.google.com.ar/maps/dir//Chacabuco+1091,+Esquel,+Chubut/@-42.9161512,-71.3183721,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x961dac2354da9fe5:0x4e3976d4246bf1f9!2m2!1d-71.3161834!2d-42.9161551!3e0"
+                            target="_blank" rel="noopener">Como llegar</a>
+                    </button>
+    
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="contenedor">
+            <p class="footer__texto">2021 © <strong>Sergio R. Orrego</strong> - Contador Público (IUA)</p>
+        </div>
+    </footer>
+
+    <script src="js/modernizr.js"></script>
+
+</body>
+
+</html>
